@@ -1,7 +1,7 @@
 FROM registry.fedoraproject.org/fedora-minimal:38
 
 RUN microdnf -y --nodocs --setopt=install_weak_deps=0 install \
-      postgresql-server \
+      postgresql-server 
 RUN microdnf clean all
 
 
